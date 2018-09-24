@@ -1,0 +1,7 @@
+"Delete","Delete"
+"Delete Order(s)","Delete Order(s)"
+"Are you sure you wan\'t to delete selected items?","Are you sure you wan\'t to delete selected items?"
+"This feature is temporarily disabled. Please have a look at the <a href=\"%1\">configuration settings</a>.","This feature is temporarily disabled. Please have a look at the <a href=\"%1\">configuration settings</a>."
+"Total of %1 order(s) were deleted successfully.","Total of %1 order(s) were deleted successfully."
+"Only orders with a specific status can be deleted. Please have a look at the order status restrictions in the <a href=\"%1\">configuration settings</a>.","Only orders with a specific status can be deleted. Please have a look at the order status restrictions in the <a href=\"%1\">configuration settings</a>."
+"At least one order could not be deleted because of the order status restrictions in the <a href=\"%1\">configuration settings</a>.","At least one order could not be deleted because of the order status restrictions in the <a href=\"%1\">configuration settings</a>."

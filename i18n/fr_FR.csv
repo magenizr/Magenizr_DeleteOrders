@@ -1,0 +1,7 @@
+"Delete","Effacer"
+"Delete Order(s)","Supprimer une commande"
+"Are you sure you wan\'t to delete selected items?","Êtes-vous sûr de vouloir supprimer les éléments sélectionnés?"
+"This feature is temporarily disabled. Please have a look at the <a href=\"%1\">configuration settings</a>.","Cette fonctionnalité est désactivée. Veuillez consulter les paramètres <a href=\"%1\"> Paramètres </a>."
+"Total of %1 order(s) were deleted successfully.","Insgesamt %1 Bestellung(en) wurden erfolgreich gelöscht."
+"Only orders with a specific status can be deleted. Please have a look at the order status restrictions in the <a href=\"%1\">configuration settings</a>.","Seules les commandes avec un statut de commande spécifique peuvent être supprimées. Veuillez apporter les modifications appropriées dans les <a href=\"%1\"> paramètres </a>."
+"At least one order could not be deleted because of the order status restrictions in the <a href=\"%1\">configuration settings</a>.","Une ou plusieurs commandes n'ont pas pu être supprimées en raison des <a href=\"%1\"> paramètres </a>."
