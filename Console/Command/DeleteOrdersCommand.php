@@ -51,7 +51,7 @@ class DeleteOrdersCommand extends Command
 
     protected function configure()
     {
-        $this->setName('magenizr:deleteorders')
+        $this->setName('magenizr:order:delete')
             ->setDescription('Delete Orders Command')
             ->setDefinition([
                 new InputArgument(
