@@ -4,7 +4,7 @@
  *
  * @category    Magenizr
  * @package     Magenizr_DeleteOrders
- * @copyright   Copyright (c) 2018 Magenizr (http://www.magenizr.com)
+ * @copyright   Copyright (c) 2018 - 2023 Magenizr (http://www.magenizr.com)
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
 
@@ -30,7 +30,6 @@ class DeleteOrdersCommand extends Command
      * @param \Magento\Sales\Model\OrderFactory $orderFactory
      * @param \Magenizr\DeleteOrders\Model\Order $order
      * @param \Magenizr\DeleteOrders\Helper\Data $helper
-     * @param \Magento\Framework\Registry $registry
      */
     public function __construct(
         \Magento\Framework\App\State $state,
@@ -43,7 +42,6 @@ class DeleteOrdersCommand extends Command
 
         $this->orderFactory = $orderFactory;
         $this->order = $order;
-        $this->registry = $registry;
         $this->helper = $helper;
 
         parent::__construct();
@@ -85,7 +83,6 @@ class DeleteOrdersCommand extends Command
                 if (!$order->getId()) {
                     $output->writeln('Order ID ' . $orderNumber . ' does not exist.');
                 } else {
-                    $this->registry->register('isSecureArea', 'true');
 
                     // Delete Invoice, Shipment and Credit Memo first
                     $this->order->deleteRelatedRecords($order);
@@ -93,9 +90,7 @@ class DeleteOrdersCommand extends Command
                     // Delete the actual order
                     $order->delete();
 
-                    $this->registry->unregister('isSecureArea');
-
-                    $output->writeln('Order ID ' . $orderNumber . ' successfully deleted.');
+                    $output->writeln('Order ID ' . $orderNumber . ' deleted.');
                 }
             }
         }

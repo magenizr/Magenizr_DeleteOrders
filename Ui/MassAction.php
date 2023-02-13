@@ -4,7 +4,7 @@
  *
  * @category    Magenizr
  * @package     Magenizr_DeleteOrders
- * @copyright   Copyright (c) 2018 Magenizr (http://www.magenizr.com)
+ * @copyright   Copyright (c) 2018 - 2023 Magenizr (http://www.magenizr.com)
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
 
@@ -43,7 +43,7 @@ class MassAction extends \Magento\Ui\Component\MassAction
         array $data,
         array $components = []
     ) {
-    
+
         $this->helper = $helper;
         $this->urlBuilder = $urlBuilder;
         $this->authorization = $authorization;
@@ -66,7 +66,7 @@ class MassAction extends \Magento\Ui\Component\MassAction
                 'url' => $this->urlBuilder->getUrl('deleteorders/deleteorders/massDelete'),
                 'confirm' => [
                     'title' => __('Delete Order(s)'),
-                    'message' => __('Are you sure you wan\'t to delete selected items?'),
+                    'message' => __('Are you sure you want to delete selected items?'),
                 ]
             ];
         }
