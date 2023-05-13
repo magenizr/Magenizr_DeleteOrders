@@ -1,4 +1,7 @@
-# Magenizr DeleteOrders
+[![Magenizr Plus](https://images2.imgbox.com/11/6b/yVOOloaA_o.gif)](https://account.magenizr.com)
+---
+
+# Delete Orders
 This Magento 2 modules allows admin users to delete orders including all related information such as invoices, shipments and credit memos via backend or command-line only.
 
 ![Magenizr DeleteOrders - Backend](https://images2.imgbox.com/80/dd/N2mi9fuh_o.png)
@@ -81,10 +84,10 @@ php bin/magento setup:upgrade
 ```
 
 ## Support
-If you experience any issues, don't hesitate to open an issue on [Github](https://github.com/magenizr/Magenizr_Debugger/issues). For a custom build, don't hesitate to contact us on [Magento Marketplace](https://marketplace.magento.com/partner/magenizr).
+If you experience any issues, don't hesitate to open an issue on [Github](https://github.com/magenizr/Magenizr_Debugger/issues).
 
 ## Purchase
-This module is available for free on [GitHub](https://github.com/magenizr). If you purchase the module on [Magenizr Shop](https://shop.magenizr.com) or [Magento Marketplace](https://marketplace.magento.com/partner/magenizr) we offer 60 days free support, 90 days warranty and 12 month free updates.
+This module is available for free on [GitHub](https://github.com/magenizr).
 
 ## Contact
 Follow us on [GitHub](https://github.com/magenizr), [Twitter](https://twitter.com/magenizr) and [Facebook](https://www.facebook.com/magenizr).
