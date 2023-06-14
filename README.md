@@ -17,7 +17,7 @@ A admin user can delete unwanted orders ( e.g test orders ) without having a dev
 * A new option `Delete` to the `Actions` dropdown in the `Sales > Orders` grid.
 * CLI command called `magenizr:order:delete`.
 * REST API endpoint `/V1/order/:orderId`.
-* A list `Restrict Order Status` in `Stores > Configuration > Sales > Sales > Delete Orders` allows the admin user to limit the delete feature to specific order statuses only.
+* A list `Restrict Order Status` in `Stores > Configuration > Magenizr > Delete Orders` allows the admin user to limit the delete feature to specific order statuses only.
 * A drop down `Availability` that can be used to limit the availability to `Backend`, `Command-Line`, `REST API` or `All`.
 
 * It clears all related order information which are stored in the following tables.
@@ -26,7 +26,7 @@ A admin user can delete unwanted orders ( e.g test orders ) without having a dev
 sales_invoice, sales_invoice_grid, sales_shipment, sales_shipment_grid, sales_creditmemo, sales_creditmemo_grid
 ```
 * The functionality can be restricted to specific roles via `System > Permissions > User Roles`. The ACL resource is `Stores > Configuration > Delete Orders`.
-* The configuration can be found in `Stores > Configuration > Sales > Sales > Delete Orders`.
+* The configuration can be found in `Stores > Configuration > Magenizr > Delete Orders`.
 
 ## Usage
 1. Once the module is installed and enabled, a new option `Delete` in the dropdown `Actions` is available on `Sales > Orders`. Once the popup message `Are you sure you want to delete selected items?` is confirmed, the module will deleted selected items and display a success message `Total of X order(s) were deleted successfully.`.
