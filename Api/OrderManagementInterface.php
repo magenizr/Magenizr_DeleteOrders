@@ -7,8 +7,16 @@
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
 
-\Magento\Framework\Component\ComponentRegistrar::register(
-    \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Magenizr_DeleteOrders',
-    __DIR__
-);
+namespace Magenizr\DeleteOrders\Api;
+
+interface OrderManagementInterface
+{
+
+    /**
+     * Delete a specific order
+     *
+     * @param integer $orderId
+     * @return mixed
+     */
+    public function delete($orderId);
+}

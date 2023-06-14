@@ -3,7 +3,6 @@
  * Magenizr DeleteOrders
  *
  * @category    Magenizr
- * @package     Magenizr_DeleteOrders
  * @copyright   Copyright (c) 2018 - 2023 Magenizr (http://www.magenizr.com)
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
@@ -18,6 +17,8 @@ class Data extends AbstractHelper
 {
 
     /**
+     * Check if module is enabled
+     *
      * @return mixed
      */
     public function isEnabled()
@@ -26,6 +27,8 @@ class Data extends AbstractHelper
     }
 
     /**
+     * Return order status restriction
+     *
      * @return array
      */
     public function getOrderStatusRestriction()
@@ -34,13 +37,15 @@ class Data extends AbstractHelper
     }
 
     /**
+     * Return availability for restrictions
+     *
      * @param string $area
      */
-    public function getAvailability($area = 'both')
+    public function getAvailability($area = 'all')
     {
         $availability = $this->getScopeConfig('availability');
 
-        if ($availability == 'both') {
+        if ($availability == 'all') {
             return true;
         }
 
@@ -52,13 +57,15 @@ class Data extends AbstractHelper
     }
 
     /**
-     * @param $field
+     * Return scope config by field
+     *
+     * @param string $field
      * @return mixed
      */
     public function getScopeConfig($field)
     {
         return $this->scopeConfig->getValue(
-            sprintf('sales/magenizr_deleteorders/%s', $field),
+            sprintf('magenizr_deleteorders/general/%s', $field),
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE
         );
     }

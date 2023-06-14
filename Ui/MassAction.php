@@ -3,7 +3,6 @@
  * Magenizr DeleteOrders
  *
  * @category    Magenizr
- * @package     Magenizr_DeleteOrders
  * @copyright   Copyright (c) 2018 - 2023 Magenizr (http://www.magenizr.com)
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
@@ -13,14 +12,14 @@ namespace Magenizr\DeleteOrders\Ui;
 class MassAction extends \Magento\Ui\Component\MassAction
 {
     /**
-     * @var \Magento\Framework\UrlInterface
-     */
-    private $urlBuilder;
-
-    /**
      * @var \Magenizr\DeleteOrders\Helper\Data
      */
     private $helper;
+    
+    /**
+     * @var \Magento\Framework\UrlInterface
+     */
+    private $urlBuilder;
 
     /**
      * @var \Magento\Framework\AuthorizationInterface
@@ -28,12 +27,14 @@ class MassAction extends \Magento\Ui\Component\MassAction
     private $authorization;
 
     /**
-     * MassAction constructor.
+     * Init constructor
+     *
      * @param \Magenizr\DeleteOrders\Helper\Data $helper
      * @param \Magento\Framework\UrlInterface $urlBuilder
+     * @param \Magento\Framework\AuthorizationInterface $authorization
      * @param \Magento\Framework\View\Element\UiComponent\ContextInterface $context
-     * @param array $components
      * @param array $data
+     * @param array $components
      */
     public function __construct(
         \Magenizr\DeleteOrders\Helper\Data $helper,
@@ -51,6 +52,11 @@ class MassAction extends \Magento\Ui\Component\MassAction
         parent::__construct($context, $components, $data);
     }
 
+    /**
+     * Init prepare
+     *
+     * @return void
+     */
     public function prepare()
     {
         parent::prepare();

@@ -3,7 +3,6 @@
  * Magenizr DeleteOrders
  *
  * @category    Magenizr
- * @package     Magenizr_DeleteOrders
  * @copyright   Copyright (c) 2018 - 2023 Magenizr (http://www.magenizr.com)
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
@@ -30,6 +29,8 @@ class OrderStatus implements \Magento\Framework\Option\ArrayInterface
     }
 
     /**
+     * Array with order statuses
+     *
      * @return mixed
      */
     public function toOptionArray()

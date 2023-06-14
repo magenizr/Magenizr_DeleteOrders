@@ -3,7 +3,6 @@
  * Magenizr DeleteOrders
  *
  * @category    Magenizr
- * @package     Magenizr_DeleteOrders
  * @copyright   Copyright (c) 2018 - 2023 Magenizr (http://www.magenizr.com)
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
@@ -15,7 +14,8 @@ use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 class MassDelete extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassAction
 {
     /**
-     * MassDelete constructor.
+     * MassDelete constructor
+     *
      * @param \Magento\Backend\App\Action\Context $context
      * @param \Magento\Ui\Component\MassAction\Filter $filter
      * @param \Magenizr\DeleteOrders\Helper\Data $helper
@@ -41,8 +41,10 @@ class MassDelete extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassA
     }
 
     /**
-     * @param AbstractCollection $collection //abstract collection
-     * @return type
+     * Init massAction
+     *
+     * @param AbstractCollection $collection
+     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\ResultInterface|void
      */
     protected function massAction(AbstractCollection $collection)
     {
@@ -91,7 +93,7 @@ class MassDelete extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassA
 
             } else {
                 $this->messageManager->addSuccessMessage(
-                    __('Total of %1 orders were deleted.', $ordersDeleted)
+                    __('Total of %1 orders have been deleted.', $ordersDeleted)
                 );
             }
 

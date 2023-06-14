@@ -2,7 +2,7 @@
     "name": "magenizr/magento2-deleteorders",
     "description": "This Magento 2 modules allows admin users to delete orders with all related information such as invoices, shipments and credit memos.",
     "type": "magento2-module",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "license": [
         "OSL-3.0"
     ],
