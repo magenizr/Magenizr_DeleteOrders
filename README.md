@@ -1,4 +1,3 @@
-[![Magenizr Plus](https://images2.imgbox.com/11/6b/yVOOloaA_o.gif)](https://account.magenizr.com)
 ---
 
 [![Latest Stable Version](http://poser.pugx.org/magenizr/magento2-deleteorders/v)](https://packagist.org/packages/magenizr/magento2-deleteorders) [![Total Downloads](http://poser.pugx.org/magenizr/magento2-deleteorders/downloads)](https://packagist.org/packages/magenizr/magento2-deleteorders) [![Latest Unstable Version](http://poser.pugx.org/magenizr/magento2-deleteorders/v/unstable)](https://packagist.org/packages/magenizr/magento2-deleteorders) [![License](http://poser.pugx.org/magenizr/magento2-deleteorders/license)](https://packagist.org/packages/magenizr/magento2-deleteorders) [![PHP Version Require](http://poser.pugx.org/magenizr/magento2-deleteorders/require/php)](https://packagist.org/packages/magenizr/magento2-deleteorders)
